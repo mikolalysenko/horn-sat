@@ -6,7 +6,7 @@ module.exports = solveHornSAT
 
 function contains(seq, x) {
   var i = bounds.le(seq, x)
-  if(i < seq.length && seq[i] === x) {
+  if(i > 0 && seq[i] === x) {
     return true
   }
   return false
